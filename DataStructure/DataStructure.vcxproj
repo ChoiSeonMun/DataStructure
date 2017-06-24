@@ -18,6 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Polynomial.h" />
+    <ClInclude Include="SparsePoly.h" />
+    <ClInclude Include="Term.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Chapter2 Main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{81C5C038-B732-4B24-B2C2-F263D9EA1AC8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -145,12 +153,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="MyAlgorithm.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Chapter1 Main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

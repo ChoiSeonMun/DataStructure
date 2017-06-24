@@ -15,12 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyAlgorithm.h">
+    <ClInclude Include="Polynomial.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SparsePoly.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Term.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter1 Main.cpp">
+    <ClCompile Include="Chapter2 Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
