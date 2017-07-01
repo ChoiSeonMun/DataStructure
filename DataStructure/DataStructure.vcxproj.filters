@@ -15,27 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CheckMatching.h">
+    <ClInclude Include="CircularQueue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ArrayStack.h">
+    <ClInclude Include="CircularDeque.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="OperandStack.h">
+    <ClInclude Include="Customer.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="CalculateExpression.h">
+    <ClInclude Include="BankSimulator.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="InfixToPostfix.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Location2D.h">
+    <ClInclude Include="CustomerQueue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter 3.cpp">
+    <ClCompile Include="Chapter 4.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
