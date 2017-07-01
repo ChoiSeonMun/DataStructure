@@ -18,17 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ArrayStack.h" />
-    <ClInclude Include="CalculateExpression.h" />
-    <ClInclude Include="InfixToPostfix.h" />
-    <ClInclude Include="Location2D.h" />
-    <ClInclude Include="OperandStack.h" />
-    <ClInclude Include="CheckMatching.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Chapter 3.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{81C5C038-B732-4B24-B2C2-F263D9EA1AC8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
