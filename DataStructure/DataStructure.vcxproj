@@ -24,6 +24,8 @@
   <ItemGroup>
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="LinkedStack.h" />
+    <ClInclude Include="Location2D.h" />
+    <ClInclude Include="Maze.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Student.h" />
   </ItemGroup>

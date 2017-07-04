@@ -13,7 +13,7 @@ public:
 	void	enqueue(Node* item);
 	Node*	dequeue();
 	Node*	peek() { return front; }
-	void	display();
+	//void	display();
 private:
 	Node*	front = nullptr;
 	Node*	rear = nullptr;
@@ -43,12 +43,12 @@ Node * LinkedQueue::dequeue()
 	return result;
 }
 
-void LinkedQueue::display()
-{
-	puts("Queue Contents");
-	puts("-------------------");
-	for (Node* link = front; link != nullptr; link = link->getLink())
-		link->display();
-	puts("");
-}
+//void LinkedQueue::display()
+//{
+//	puts("Queue Contents");
+//	puts("-------------------");
+//	for (Node* link = front; link != nullptr; link = link->getLink())
+//		link->display();
+//	puts("");
+//}
 #endif

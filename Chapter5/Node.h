@@ -3,12 +3,12 @@
 #ifndef __NODE_H__
 #define __NODE_H__
 
-#include "Student.h"
+#include "Location2D.h"
 
-class Node : public Student {
+class Node : public Location2D {
 public:
-	Node(int id = 0, char* name = "", char* dept = "")
-		: Student(id, name, dept) { }
+	Node(int row = 0, int col = 0)
+		: Location2D(row, col) { }
 	Node*	getLink() { return link; }
 	void	setLink(Node* next) { link = next; }
 private:

@@ -14,7 +14,7 @@ public:
 	void	push(Node* item);
 	Node*	pop();
 	Node*	peek() { return top; }
-	void	display();
+	//void	display();
 private:
 	Node*	top;
 };
@@ -36,12 +36,12 @@ Node * LinkedStack::pop()
 	return result;
 }
 
-void LinkedStack::display()
-{
-	puts("Stack Content");
-	puts("--------------------");
-	for (Node* link = top; link != nullptr; link = link->getLink())
-		link->display();
-	puts("");
-}
+//void LinkedStack::display()
+//{
+//	puts("Stack Content");
+//	puts("--------------------");
+//	for (Node* link = top; link != nullptr; link = link->getLink())
+//		link->display();
+//	puts("");
+//}
 #endif
