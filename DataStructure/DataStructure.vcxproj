@@ -19,15 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter 5.cpp" />
+    <ClInclude Include="ArrayList.h" />
+    <ClInclude Include="DoubleLinkedList.h" />
+    <ClInclude Include="Line.h" />
+    <ClInclude Include="LineEditor.h" />
+    <ClInclude Include="LinkedDeque.h" />
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="Node2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkedQueue.h" />
-    <ClInclude Include="LinkedStack.h" />
-    <ClInclude Include="Location2D.h" />
-    <ClInclude Include="Maze.h" />
-    <ClInclude Include="Node.h" />
-    <ClInclude Include="Student.h" />
+    <ClCompile Include="Chapter 6.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{81C5C038-B732-4B24-B2C2-F263D9EA1AC8}</ProjectGuid>
