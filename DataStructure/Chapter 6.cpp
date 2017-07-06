@@ -1,19 +1,12 @@
-#include "LinkedDeque.h"
+#include "LinkedList.h"
 
 int main()
 {
-	LinkedDeque deq;
+	LinkedList list1, list2;
 
-	for (int i = 1; i < 10; ++i)
-	{
-		if (i % 2) { deq.addFront(i); }
-		else { deq.addRear(i); }
-	}
-	deq.display();
-	delete deq.deleteFront();
-	delete deq.deleteRear();
-	delete deq.deleteFront();
-	deq.display();
-
+	list1.insert(0, new Node("Char"));
+	list1.insert(0, new Node("Name"));
+	list1.insert(1, new Node("Mun"));
+	
 	return 0;
 }

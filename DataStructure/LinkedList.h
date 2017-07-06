@@ -7,8 +7,7 @@
 
 class LinkedList {
 public:
-	LinkedList()
-		: origin(0) { }
+	LinkedList() = default;
 	~LinkedList() { clear(); }
 
 	Node*	getHead() { return origin.getNext(); }
@@ -20,6 +19,8 @@ public:
 	void	replace(int pos, Node* node);
 	void	clear() { while (!isEmpty()) delete remove(0); }
 	void	insert(int pos, Node* node);
+	//Problem Program Project 1-2
+	void	merge(LinkedList* that);
 protected:
 	Node	origin;
 };
@@ -31,6 +32,19 @@ void LinkedList::insert(int pos, Node * node)
 	Node* before = getEntry(pos - 1);
 
 	before->insertNext(node);
+}
+
+//Feature : to merge that list to this list
+void LinkedList::merge(LinkedList * that)
+{
+	Node* thatListHead = that->getHead();
+	int endPosition = size();
+	while (!that->isEmpty())
+	{
+		insert(endPosition, thatListHead);
+		that->remove(0);
+		++endPosition;
+	}
 }
 
 //Feature : to remove the item at pos from the list
@@ -87,4 +101,5 @@ void LinkedList::replace(int pos, Node * node)
 		before->insertNext(node);
 	}
 }
+
 #endif

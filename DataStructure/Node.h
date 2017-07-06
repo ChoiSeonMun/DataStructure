@@ -7,7 +7,7 @@
 
 class Node : public Line {
 public:
-	Node(char* content)
+	Node(char* content = "")
 		: Line(content), next(nullptr) { }
 
 	Node*	getNext() { return next; }
