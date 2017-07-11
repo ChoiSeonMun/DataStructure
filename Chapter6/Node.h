@@ -34,9 +34,9 @@ Node * Node::removeNext()
 	if (!next)
 		return nullptr;
 	
-	Node* nextItem = next;
-	next = next->getNext();
+	Node* removed = next;
+	next = removed->next;
 
-	return nextItem;
+	return removed;
 }
 #endif

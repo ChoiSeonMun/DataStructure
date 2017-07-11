@@ -19,6 +19,8 @@ public:
 	void	insert(int pos, Node2* node);
 	void	display();
 	void	clear() { while (!isEmpty()) delete remove(0); }
+	//Problem Programming Project 1-1
+	void	reverse();
 	bool	isEmpty() { return getHead() == nullptr; }
 	int		size();
 private:
@@ -87,6 +89,21 @@ void DoubleLinkedList::display()
 	for (Node2* currentNode = getHead(); currentNode; currentNode = currentNode->getNext())
 		currentNode->display();
 	puts(" ");
+}
+
+//Feature : to reverse the nodes
+void DoubleLinkedList::reverse()
+{
+	Node2* temp;
+	getHead()->setPrev(nullptr);
+	origin.setNext(getEntry(size() - 1));
+	for (Node2* currentNode = getHead(); currentNode; currentNode = currentNode->getNext())
+	{
+		temp = currentNode->getNext();
+		currentNode->setNext(currentNode->getPrev());
+		currentNode->setPrev(temp);
+	}
+	getHead()->setPrev(&origin);
 }
 
 int DoubleLinkedList::size()

@@ -19,6 +19,7 @@ public:
 	void	replace(int pos, Node* node);
 	void	clear() { while (!isEmpty()) delete remove(0); }
 	void	insert(int pos, Node* node);
+	void	display();
 	//Problem Program Project 1-2
 	void	merge(LinkedList* that);
 protected:
@@ -34,15 +35,22 @@ void LinkedList::insert(int pos, Node * node)
 	before->insertNext(node);
 }
 
+inline void LinkedList::display()
+{
+	for (Node* currentNode = getHead(); currentNode; currentNode = currentNode->getNext())
+	{
+		currentNode->print();
+		puts("");
+	}
+}
+
 //Feature : to merge that list to this list
 void LinkedList::merge(LinkedList * that)
 {
-	Node* thatListHead = that->getHead();
 	int endPosition = size();
 	while (!that->isEmpty())
 	{
-		insert(endPosition, thatListHead);
-		that->remove(0);
+		insert(endPosition, that->remove(0));
 		++endPosition;
 	}
 }

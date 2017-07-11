@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayList.h" />
+    <ClInclude Include="CircularList.h" />
     <ClInclude Include="DoubleLinkedList.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="LineEditor.h" />
@@ -27,6 +28,10 @@
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Node2.h" />
+    <ClInclude Include="SparsePoly.h" />
+    <ClInclude Include="Term.h" />
+    <ClInclude Include="TermList.h" />
+    <ClInclude Include="TermNode.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Chapter 6.cpp" />
