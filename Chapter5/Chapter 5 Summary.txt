@@ -1,2 +1,2 @@
 1. 연결 리스트란?
->> 데이터와 링크로 구성된 자료구조를 노드라 하는데, 이 물리적으로 떨어져 있는 노드들을 링크를 이용해 하나로 묶은 자료구조를 연결 리스트라 한다. 단순 연결 리스트(Single Linked List), 선형 연결 리스트(Circular Linked List), 이중 연결 리스트(Doubly Linked List)가 있다. 
+>> 데이터와 링크로 구성된 자료구조를 노드라 하는데, 이 물리적으로 떨어져 있는 노드들을 링크를 이용해 하나로 묶은 자료구조를 연결 리스트라 한다. 단순 연결 리스트(Single Linked List), 원형 연결 리스트(Circular Linked List), 이중 연결 리스트(Doubly Linked List)가 있다. 

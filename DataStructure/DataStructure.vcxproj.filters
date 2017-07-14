@@ -15,24 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter7.cpp">
+    <ClCompile Include="Chaper7.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="fibonacci.h">
+    <ClInclude Include="BinaryNode.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="reverse.h">
+    <ClInclude Include="BinaryTree.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ackermann.h">
+    <ClInclude Include="ThreadNode.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="drawTree.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="max.h">
+    <ClInclude Include="ThreadTree.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

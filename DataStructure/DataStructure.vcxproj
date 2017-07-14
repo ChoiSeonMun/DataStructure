@@ -19,14 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter7.cpp" />
+    <ClCompile Include="Chaper7.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="drawTree.h" />
-    <ClInclude Include="fibonacci.h" />
-    <ClInclude Include="max.h" />
-    <ClInclude Include="reverse.h" />
-    <ClInclude Include="ackermann.h" />
+    <ClInclude Include="BinaryNode.h" />
+    <ClInclude Include="BinaryTree.h" />
+    <ClInclude Include="ThreadNode.h" />
+    <ClInclude Include="ThreadTree.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{81C5C038-B732-4B24-B2C2-F263D9EA1AC8}</ProjectGuid>
