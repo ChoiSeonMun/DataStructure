@@ -19,13 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chaper7.cpp" />
+    <ClCompile Include="Chapter9.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryNode.h" />
     <ClInclude Include="BinaryTree.h" />
-    <ClInclude Include="ThreadNode.h" />
-    <ClInclude Include="ThreadTree.h" />
+    <ClInclude Include="BinRecordNode.h" />
+    <ClInclude Include="BinSearchTreeh.h" />
+    <ClInclude Include="Dictionary.h" />
+    <ClInclude Include="Record.h" />
+    <ClInclude Include="RecordTree.h" />
+    <ClInclude Include="SrchRecordTree.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{81C5C038-B732-4B24-B2C2-F263D9EA1AC8}</ProjectGuid>
