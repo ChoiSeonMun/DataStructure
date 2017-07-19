@@ -19,18 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HeapNode.h" />
-    <ClInclude Include="isHeapIter.h" />
-    <ClInclude Include="isHeapRecurh.h" />
-    <ClInclude Include="MakeTree.h" />
-    <ClInclude Include="MaxHeap.h" />
-    <ClInclude Include="MaxPriorityQueue.h" />
-    <ClInclude Include="MinHeap.h" />
-    <ClInclude Include="MinPriorityQueue.h" />
+    <ClInclude Include="AdjListGraph.h" />
+    <ClInclude Include="AdjMatGraph.h" />
+    <ClInclude Include="ArrayStack.h" />
+    <ClInclude Include="CircularQueue.h" />
+    <ClInclude Include="ConnectedComponentGraph.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="SrchAJGraph.h" />
+    <ClInclude Include="SrchAMGraph.h" />
+    <ClInclude Include="TopoSortGraph.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter 10.cpp" />
+    <ClCompile Include="Chapter 11.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{81C5C038-B732-4B24-B2C2-F263D9EA1AC8}</ProjectGuid>
