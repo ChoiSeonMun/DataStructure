@@ -30,11 +30,11 @@ public:
 	//Problem Program Project 1-1
 	bool			isFull() { return getLeafCount() == pow(2, getHeight() - 1); }
 	//Problem Program Project 1-2
-	int				level(BinaryNode<T>* node);
+    int				level(BinaryNode<T>* node);
 	//Problem Program Project 1-3
 	bool			isBalanced();
 	//Problem Program Project 1-4
-	int				pathLength() { return isEmpty() ? 0 : pathLength(root) - 1; }
+    int				pathLength();
 	//Problem Program Project 1-5
 	void			reverse();
 	//Problem Program Project 1-6
@@ -45,7 +45,6 @@ private:
 	int				getHeight(BinaryNode<T>* node);
 	int				evaluate(BinaryNode<T>* node);
 	int				calcSize(BinaryNode<T>* node);
-	int				pathLength(BinaryNode<T>* node);
 
 	BinaryNode<T>*	root;
 };
@@ -74,28 +73,35 @@ void BinaryTree<T>::levelOrder()
 }
 
 template<typename T>
-int BinaryTree<T>::level(BinaryNode<T>* node)
+inline int BinaryTree<T>::level(BinaryNode<T>* node)
 {
-	if (isEmpty())
-		return 0;
+    if (isEmpty())
+        return 0;
 
-	std::queue<BinaryNode<T>*> que;
-	que.push(root);
-	int level = 0;
-	while (!que.empty())
-	{
-		BinaryNode<T>* nodeInTree = que.front();
-		que.pop();
-		++level;
-		if (nodeInTree == node)
-			return level;
-		if (nodeInTree->getLeft())
-			que.push(nodeInTree->getLeft());
-		if (nodeInTree->getRight())
-			que.push(nodeInTree->getRight());
-	}
+    int level = 1;
+    std::queue<BinaryNode<T>*> parentQue;
+    std::queue<BinaryNode<T>*> childQue;
+    parentQue.push(root);
 
-	return 0;
+    do {
+        childQue = std::queue<BinaryNode<T>*>(); //for clearing
+        BinaryNode<T>* temp;
+        while (!parentQue.empty())
+        {
+            temp = parentQue.front();
+            if (temp == node)
+                return level;
+            if (temp->getLeft())
+                childQue.push(temp->getLeft());
+            if (temp->getRight())
+                childQue.push(temp->getRight());
+            parentQue.pop();
+        }
+        ++level;
+        parentQue = childQue;
+    } while (!childQue.empty());
+
+    return 0;
 }
 
 template<typename T>
@@ -192,10 +198,35 @@ int BinaryTree<T>::calcSize(BinaryNode<T> * node)
 }
 
 template<typename T>
-int BinaryTree<T>::pathLength(BinaryNode<T>* node)
+int BinaryTree<T>::pathLength()
 {
-	if (!node)
-		return 0;
-	return 1 + pathLength(node->getLeft()) + pathLength(node->getRight());
+    if (isEmpty())
+        return 0;
+
+    int sum = 0;
+    int level = 1;
+    std::queue<BinaryNode<T>*> parentQue;
+    std::queue<BinaryNode<T>*> childQue;
+    parentQue.push(root);
+
+    do { 
+        childQue = std::queue<BinaryNode<T>*>(); //for clearing
+        BinaryNode<T>* temp;
+        while (!parentQue.empty())
+        {
+            temp = parentQue.front();
+            if (temp->getLeft())
+                childQue.push(temp->getLeft());
+            if (temp->getRight())
+                childQue.push(temp->getRight());
+            sum += level - 1;
+            parentQue.pop();
+        }
+        ++level;
+        parentQue = childQue;
+    } while (!childQue.empty());
+
+    return sum;
 }
+
 #endif

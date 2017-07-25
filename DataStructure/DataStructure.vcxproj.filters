@@ -11,45 +11,21 @@
     <Filter Include="헤더파일">
       <UniqueIdentifier>{221c14bd-c33e-4b96-8155-091880d85d1b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더파일\Matrix">
-      <UniqueIdentifier>{6cb7bdcc-b5f6-4436-afda-ace57d4fc2f6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더파일\List">
-      <UniqueIdentifier>{a886a8ab-2f71-4501-98c4-e35ee68af1be}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter 11.cpp">
-      <Filter>소스파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AdjMatGraph.h">
-      <Filter>헤더파일\Matrix</Filter>
+    <ClInclude Include="Sort.h">
+      <Filter>헤더파일</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
-      <Filter>헤더파일\List</Filter>
-    </ClInclude>
-    <ClInclude Include="AdjListGraph.h">
-      <Filter>헤더파일\List</Filter>
-    </ClInclude>
-    <ClInclude Include="SrchAMGraph.h">
-      <Filter>헤더파일\Matrix</Filter>
-    </ClInclude>
-    <ClInclude Include="SrchAJGraph.h">
-      <Filter>헤더파일\List</Filter>
+    <ClInclude Include="Utility.h">
+      <Filter>헤더파일</Filter>
     </ClInclude>
     <ClInclude Include="CircularQueue.h">
       <Filter>헤더파일</Filter>
     </ClInclude>
-    <ClInclude Include="ConnectedComponentGraph.h">
-      <Filter>헤더파일\Matrix</Filter>
-    </ClInclude>
-    <ClInclude Include="TopoSortGraph.h">
-      <Filter>헤더파일\List</Filter>
-    </ClInclude>
-    <ClInclude Include="ArrayStack.h">
-      <Filter>헤더파일\List</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Chapter 13.cpp">
+      <Filter>소스파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

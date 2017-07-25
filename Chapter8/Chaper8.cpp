@@ -2,24 +2,16 @@
 
 int main()
 {
-	BinaryTree<int> tree1, tree2;
-	
-	BinaryNode<int>* n1 = new BinaryNode<int>(20, nullptr, nullptr);
-	BinaryNode<int>* n3 = new BinaryNode<int>(30, nullptr, nullptr);
-	BinaryNode<int>* n2 = new BinaryNode<int>(10, n1, n3);
-	BinaryNode<int>* n4 = new BinaryNode<int>(10, nullptr, nullptr);
-	
-	tree1.setRoot(n2);
-	tree2.setRoot(n4);
-	if (tree1.isDisjointFrom(tree2))
-		puts("ºÐ¸®µÊ");
-	else
-		puts("¾Æ´Ô");
+    BinaryTree<int> tree;
+    
+    BinaryNode<int>* F = new BinaryNode<int>(0, nullptr, nullptr);
+    BinaryNode<int>* D = new BinaryNode<int>(0, nullptr, nullptr);
+    BinaryNode<int>* C = new BinaryNode<int>(0, nullptr, nullptr);
+    BinaryNode<int>* B = new BinaryNode<int>(0, C, D);
+    BinaryNode<int>* E = new BinaryNode<int>(0, nullptr, F);
+    BinaryNode<int>* A = new BinaryNode<int>(0, B, E);
 
-	delete n1;
-	delete n2;
-	delete n3;
-	delete n4;
-
+    tree.setRoot(A);
+    printf("%d", tree.pathLength());
 	return 0;
 }

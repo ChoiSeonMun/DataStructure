@@ -23,6 +23,7 @@ public:
 	void		postOrder();
 	int			getCount();
 	int			getLeafCount();
+    bool        find(BinaryNode* node);
 private:
 	T			data;
 	BinaryNode*	left;
@@ -73,4 +74,15 @@ int BinaryNode<T>::getLeafCount()
 		return 1;
 	else
 		return left->getLeafCount() + right->getLeafCount();
+}
+
+template<typename T>
+bool BinaryNode<T>::find(BinaryNode * node)
+{
+    if (!this)
+        return false;
+    if (this == node)
+        return true;
+    else
+        return false || left->find(node) || right->find(node);
 }

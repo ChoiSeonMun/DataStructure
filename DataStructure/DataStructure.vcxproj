@@ -19,18 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AdjListGraph.h" />
-    <ClInclude Include="AdjMatGraph.h" />
-    <ClInclude Include="ArrayStack.h" />
     <ClInclude Include="CircularQueue.h" />
-    <ClInclude Include="ConnectedComponentGraph.h" />
-    <ClInclude Include="Node.h" />
-    <ClInclude Include="SrchAJGraph.h" />
-    <ClInclude Include="SrchAMGraph.h" />
-    <ClInclude Include="TopoSortGraph.h" />
+    <ClInclude Include="Sort.h" />
+    <ClInclude Include="Utility.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter 11.cpp" />
+    <ClCompile Include="Chapter 13.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{81C5C038-B732-4B24-B2C2-F263D9EA1AC8}</ProjectGuid>
